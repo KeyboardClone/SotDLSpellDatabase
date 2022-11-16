@@ -24,6 +24,6 @@ const db = new QuickDB({ filePath: "SotDLSpells.sqlite"});
     });
 
     // Testing to see if we can display an entry in the database
-    console.log("PRESENCE");
-    console.log(await db.get("PRESENCE"));
+    console.log("GLOBE OF NEGATION");
+    console.log(await db.get("GLOBE OF NEGATION"));
 })();
