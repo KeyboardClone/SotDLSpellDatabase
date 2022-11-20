@@ -10,7 +10,7 @@ const db = new QuickDB({ filePath: "SotDLSpells.sqlite"});
       
     // perform specific operations per line within the file
     lineReader.on('line', function (line) {
-        const entry = line.split(/;/);
+        const entry = line.split(/`/);
         // console.log(entry);
 
         // put in an entry into the database, if it already exists
@@ -24,6 +24,6 @@ const db = new QuickDB({ filePath: "SotDLSpells.sqlite"});
     });
 
     // Testing to see if we can display an entry in the database
-    console.log("BIND WATER GENIE");
-    console.log(await db.get("BIND WATER GENIE"));
+    console.log("MONSTROUS TRANSFORMATION");
+    console.log(await db.get("MONSTROUS TRANSFORMATION"));
 })();
