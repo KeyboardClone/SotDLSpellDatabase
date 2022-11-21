@@ -24,6 +24,6 @@ const db = new QuickDB({ filePath: "SotDLSpells.sqlite"});
     });
 
     // Testing to see if we can display an entry in the database
-    console.log("MONSTROUS TRANSFORMATION");
-    console.log(await db.get("MONSTROUS TRANSFORMATION"));
+    console.log("UNDO REALITY");
+    console.log(await db.get("UNDO REALITY"));
 })();
