@@ -8,8 +8,8 @@ const db = new QuickDB({ filePath: "SotDLSpells.sqlite"});
         input: require('fs').createReadStream('Spells.txt')
     });
       
-    // perform specific operations per line within the file
-    lineReader.on('line', function (line) {
+        // perform specific operations per line within the file
+        lineReader.on('line', function (line) {
         const entry = line.split(/`/);
         // console.log(entry);
 
@@ -24,6 +24,6 @@ const db = new QuickDB({ filePath: "SotDLSpells.sqlite"});
     });
 
     // Testing to see if we can display an entry in the database
-    console.log("UNDO REALITY");
-    console.log(await db.get("UNDO REALITY"));
+    console.log("TSUNAMI");
+    console.log(await db.get("TSUNAMI"));
 })();
